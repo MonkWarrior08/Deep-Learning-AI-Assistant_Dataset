@@ -105,8 +105,3 @@ The code includes basic error handling for:
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- OpenAI for providing the API and fine-tuning capabilities
-- Contributors and maintainers of the OpenAI Python package
