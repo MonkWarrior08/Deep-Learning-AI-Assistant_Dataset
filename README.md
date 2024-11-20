@@ -1,10 +1,6 @@
 # GPT-4o Tutor Fine-tuning
 
-This repository contains code for fine-tuning GPT-4o to create a custom tutor using the OpenAI API and JSONL dataset format.
-
-## Overview
-
-DeepTutor-AI is an advanced project that demonstrates the implementation of personalized AI tutoring through strategic fine-tuning of GPT-4 using carefully curated educational conversations and teaching scenarios. 
+This repository contains code for fine-tuning GPT-4o to create a custom tutor using the OpenAI API and JSONL dataset format. The system is built on extensive training data from experienced educators, academic resources, and proven teaching methodologies, making it an effective tool for personalized learning assistance across various subjects and skill levels. 
 
 ## Prerequisites
 
