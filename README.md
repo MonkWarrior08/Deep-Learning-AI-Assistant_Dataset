@@ -1,92 +1,75 @@
-# GPT-4o Tutor Fine-tuning
+# Deep Learning AI Assistant
 
-This repository contains code for fine-tuning GPT-4o to create a custom tutor using the OpenAI API and JSONL dataset format. The system is built on extensive training data from experienced educators, academic resources, and proven teaching methodologies, making it an effective tool for personalized learning assistance across various subjects and skill levels. 
+An AI assistant powered by OpenAI's API, specifically fine-tuned for Deep Learning education and assistance.
 
-## Prerequisites
+## Setup Instructions
 
-- Python 3.7+
-- OpenAI API key
-- OpenAI Python package
+### 1. Fine-tuning Setup
+1. Create an OpenAI account and obtain an API key from [OpenAI Platform](https://platform.openai.com/)
+2. Create a fine-tuning job on the OpenAI website using the provided JSONL file with the following parameters:
+   - Epochs: 10
+   - Learning rate multiplier: 2
+   - Batch size: 1
 
-## Installation
+### 2. Knowledge Base Preparation
+Before creating the vector store, gather relevant deep learning materials from:
+1. Academic Resources:
+   - Research papers from arXiv
+   - Deep learning textbooks (e.g., Deep Learning by Goodfellow et al.)
+   - Academic course materials from top universities
 
+2. Technical Documentation:
+   - Framework documentation (PyTorch, TensorFlow, etc.)
+   - Implementation guides
+   - Best practices documents
+
+3. Tutorial Content:
+   - Online course materials
+   - Code examples
+   - Case studies
+
+### 3. Vector Store Creation
+1. Format your collected materials appropriately
+2. Upload the knowledge base on the OpenAI platform to create a vector store storage
+3. This will serve as the assistant's knowledge repository
+
+### 4. Assistant Creation
+1. Go to the [OpenAI Platform](https://platform.openai.com/)
+2. Create a new assistant
+3. Select the fine-tuned model created for deep learning
+4. Connect the vector storage to the assistant
+5. Save the assistant ID for later use
+
+### 5. Environment Setup
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/AI-Tutor.git
-cd AI-Tutor
+git clone [repository-url]
 ```
 
-2. Install required packages:
+2. Install required dependencies:
 ```bash
-pip install openai
+pip install openai python-dotenv
 ```
 
-3. Set up your OpenAI API key:
-```python
-openai.api_key = "your-api-key-here"
+3. Create a `.env` file in the project root with your OpenAI API key:
+```
+OPENAI_API_KEY=your-api-key-here
+```
+
+### 6. Running the Application
+1. Open `main.py`
+2. Replace the empty `assistant_id` variable with your assistant ID
+3. Run the application:
+```bash
+python main.py
 ```
 
 ## Usage
-
-### Preparing Training Data
-
-Your training data should be in the following JSONL format which is already provided in the repo:
-
-### Running Fine-tuning
-
-```python
-# Upload training file
-file_id = prepare_training_file(training_data)
-
-# Start fine-tuning
-result = finetune_model(
-    training_file_id=file_id,
-    model="gpt-4o",
-    n_epochs=10,
-    batch_size=1,
-    learning_rate_multiplier=1
-)
-```
-
-## Functions
-
-### prepare_training_file(jsonl_data)
-Uploads a JSONL file to OpenAI and returns the file ID for fine-tuning.
-
-Parameters:
-- `jsonl_data`: List of conversation examples in JSONL format
-
-Returns:
-- `str`: File ID for fine-tuning
-
-### finetune_model(training_file_id, model, n_epochs, batch_size, learning_rate_multiplier)
-Creates a fine-tuning job with specified parameters.
-
-Parameters:
-- `training_file_id`: ID of the uploaded training file
-- `model`: Base model to fine-tune (default: "gpt-4o")
-- `n_epochs`: Number of training epochs (default: 10)
-- `batch_size`: Batch size for training (default: 1)
-- `learning_rate_multiplier`: Learning rate multiplier (default: 2)
-
-Returns:
-- `dict`: Fine-tuning job details
-
-## Configuration
-
-You can customize the fine-tuning process by adjusting these parameters:
-- Model selection
-- Number of epochs
-- Batch size
-- Learning rate multiplier
-
-## Error Handling
-
-The code includes basic error handling for:
-- File upload failures
-- Fine-tuning job creation issues
-- API connectivity problems
-
-## License
-
-This project is licensed under the MIT License.
+- Type your message and press Enter to interact with the assistant
+- The assistant can help with:
+  - Deep learning concepts explanation
+  - Architecture design recommendations
+  - Debugging assistance
+  - Best practices advice
+  - Implementation guidance
+- Type 'quit', 'exit', or 'bye' to end the conversation
