@@ -73,3 +73,6 @@ python main.py
   - Best practices advice
   - Implementation guidance
 - Type 'quit', 'exit', or 'bye' to end the conversation
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
