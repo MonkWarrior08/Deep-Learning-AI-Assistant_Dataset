@@ -1,6 +1,6 @@
 # Deep Learning AI Assistant
 
-An AI assistant powered by OpenAI's API, specifically fine-tuned for Deep Learning education and assistance.
+A sophisticated deep learning system trained on extensive educational datasets to create an adaptive AI tutor, leveraging GPT-4o's capabilities through fine-tuning with specialized pedagogical conversation patterns and expert teaching methodologies.
 
 ## Setup Instructions
 
