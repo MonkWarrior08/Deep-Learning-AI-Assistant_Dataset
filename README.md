@@ -8,8 +8,8 @@ A sophisticated deep learning system trained on extensive educational datasets t
 
 1. Clone this repository:
 ```bash
-git clone [repository-url]
-cd [repository-name]
+git clone https://github.com/MonkWarrior08/DeepTutor-AI.git
+cd DeepTutor-AI
 ```
 
 2. Install dependencies using the requirements file:
