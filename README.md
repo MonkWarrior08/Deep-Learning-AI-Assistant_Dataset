@@ -1,4 +1,4 @@
-# Deep Learning AI Assistant
+# Deep Learning AI Assistant Dataset
 
 A sophisticated deep learning system trained on extensive educational datasets to create an adaptive AI tutor, leveraging GPT-4o's capabilities through fine-tuning with specialized pedagogical conversation patterns and expert teaching methodologies.
 
